@@ -1,9 +1,7 @@
-html,
-body {
+* {
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
+  box-sizing: border-box;
 }
 
 .container {
@@ -28,7 +26,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 25px;
+  margin: 30px;
 }
 
 .company {
@@ -61,15 +59,65 @@ nav {
   width: 100%;
   font-size: 50px;
   font-weight: 700;
+  margin-top: 70px;
 }
 
 /* Main Content*/
 .main {
   text-align: center;
-  margin: 10px 0;
 }
 
-/* Main Header */
+/* Promotion section */
+.promote {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.promote div {
+  flex: 1;
+}
+
+.promo-img {
+  width: 50vw;
+}
+
+.promo-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-box > * {
+  height: 100%;
+  width: 60%;
+  line-height: 1.5em;
+  text-align: start;
+}
+
+.promo-box h1 {
+  margin-bottom: 30px;
+}
+
+.promo-box div {
+  margin-bottom: 30px;
+}
+
+.promo-box a {
+  margin-top: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.brand-line {
+  border-bottom: 3px solid hsl(51, 100%, 49%);
+}
+
+.stand-line {
+  border-bottom: 3px solid hsl(7, 99%, 70%);
+}
 
 footer {
   text-align: center;
