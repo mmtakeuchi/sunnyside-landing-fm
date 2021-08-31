@@ -271,10 +271,38 @@ footer a {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 375px) {
-  .container {
+@media screen and (max-width: 375px) {
+  /* .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+  } */
+
+  .promote {
+    flex-direction: column;
+  }
+
+  .promo-box {
+    width: 100%;
+  }
+
+  .promo-img {
+    width: 100%;
+  }
+
+  #egg-img {
+    order: 1;
+  }
+
+  #transform {
+    order: 2;
+  }
+
+  #cup-img {
+    order: 3;
+  }
+
+  #audience {
+    order: 4;
   }
 }
