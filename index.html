@@ -27,8 +27,20 @@
             <li>About</li>
             <li>Services</li>
             <li>Projects</li>
-            <li><button href="#" class="contact-btn">CONTACT</button></li>
+            <li><button class="contact-btn">CONTACT</button></li>
           </ul>
+
+          <div class="mobile-render">
+            <button class="icon-hamburger">
+              <img src="images/icon-hamburger.svg" alt="icon-hamburger" />
+            </button>
+            <ul class="mobile-list">
+              <li>About</li>
+              <li>Services</li>
+              <li>Projects</li>
+              <li><button class="contact-btn">CONTACT</button></li>
+            </ul>
+          </div>
         </nav>
 
         <div class="top-cover">
@@ -194,4 +206,13 @@
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
   </body>
+
+  <script>
+    const hamburger = document.querySelector(".icon-hamburger");
+    const hitButton = () => {
+      console.log("hamburger");
+    };
+
+    hamburger.addEventListener("click", hitButton);
+  </script>
 </html>

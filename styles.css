@@ -53,6 +53,18 @@ nav {
   font-size: 18px;
 }
 
+.mobile-render {
+  display: none;
+}
+.mobile-list {
+  display: none;
+}
+
+.icon-hamburger {
+  border: none;
+  background: transparent;
+}
+
 .top-cover {
   font-family: "Fraunces", sans-serif;
   text-align: center;
@@ -271,12 +283,50 @@ footer a {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 375px) {
-  /* .container {
+@media screen and (max-width: 500px) {
+  nav ul {
+    display: none;
+  }
+
+  #nav-links {
+    display: none;
+    /* flex: 1; */
+  }
+
+  .icon-hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 40px 20px 0 0;
+  }
+
+  .mobile-render {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .mobile-list {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-  } */
+    justify-content: space-around;
+    height: 40vh;
+    list-style: none;
+    border: 1px solid blue;
+    background: hsl(0, 0%, 100%);
+    text-align: center;
+    color: hsl(210, 4%, 67%);
+    margin: 20px;
+  }
+
+  .contact-btn {
+    background: hsl(51, 100%, 49%);
+    border: none;
+    border-radius: 50px;
+    padding: 13px;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+  }
 
   .promote {
     flex-direction: column;
