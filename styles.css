@@ -67,7 +67,7 @@ nav {
   text-align: center;
 }
 
-/* Promotion section */
+/* Promotion Section */
 .promote {
   display: flex;
   flex-wrap: wrap;
@@ -81,6 +81,7 @@ nav {
 
 .promo-img {
   width: 50vw;
+  max-height: 48vh;
 }
 
 .promo-box {
@@ -88,6 +89,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 48vh;
 }
 
 .promo-box > * {
@@ -119,6 +121,92 @@ nav {
   border-bottom: 3px solid hsl(7, 99%, 70%);
 }
 
+/* Work Section */
+.work {
+  display: flex;
+  /* justify-content: center; */
+  text-align: center;
+}
+
+.work > div {
+  height: 50vh;
+  width: 50%;
+  line-height: 1.5em;
+}
+
+.graphic-design {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("images/desktop/image-graphic-design.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: hsl(167, 40%, 24%);
+}
+
+.graphic-design > * {
+  width: 50%;
+  margin: 15px;
+}
+
+.graphic-design > h2 {
+  margin-bottom: 10px;
+}
+
+.photography {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("images/desktop/image-photography.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: hsl(198, 62%, 26%);
+}
+
+.photography > * {
+  width: 50%;
+  margin: 15px;
+}
+
+.photography > h2 {
+  margin-bottom: 10px;
+}
+
+/* Testimonial Section */
+.testimonials {
+  padding: 60px;
+  border: 1px solid blue;
+}
+
+.test-title {
+  color: hsl(210, 4%, 67%);
+  margin: 40px 0 50px 0;
+}
+
+.clients {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5em;
+}
+
+.client-img {
+  border-radius: 50%;
+  margin: 40px 0 60px 0;
+}
+
+.client-info {
+  color: hsl(210, 4%, 67%);
+  margin: 40px 0;
+}
+
+.client-name {
+  color: black;
+  font-weight: 900;
+}
+
+/* Footer */
 footer {
   text-align: center;
 }
