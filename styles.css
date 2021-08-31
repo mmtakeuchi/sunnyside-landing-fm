@@ -177,7 +177,6 @@ nav {
 /* Testimonial Section */
 .testimonials {
   padding: 60px;
-  border: 1px solid blue;
 }
 
 .test-title {
@@ -204,6 +203,22 @@ nav {
 .client-name {
   color: black;
   font-weight: 900;
+}
+
+/* Images Before Footer */
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  max-width: 100%;
+}
+
+.image-row li {
+  max-width: 25%;
+}
+
+.image-row img {
+  width: 100%;
 }
 
 /* Footer */
