@@ -336,6 +336,10 @@ footer a {
     width: 100%;
   }
 
+  .promo-box > * {
+    text-align: center;
+  }
+
   .promo-img {
     width: 100%;
   }
@@ -354,5 +358,30 @@ footer a {
 
   #audience {
     order: 4;
+  }
+
+  .work {
+    flex-direction: column;
+  }
+
+  .work div {
+    height: 75vh;
+    width: 100%;
+  }
+
+  .graphic-design {
+    background: url("images/desktop/image-graphic-design.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 350px 25px 25px;
+  }
+
+  .photography {
+    background: url("images/desktop/image-photography.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 350px 25px 25px;
   }
 }
