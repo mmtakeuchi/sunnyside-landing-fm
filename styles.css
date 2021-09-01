@@ -328,6 +328,7 @@ footer a {
     font-size: 18px;
   }
 
+  /* Promotion */
   .promote {
     flex-direction: column;
   }
@@ -360,6 +361,7 @@ footer a {
     order: 4;
   }
 
+  /* Work */
   .work {
     flex-direction: column;
   }
@@ -383,5 +385,18 @@ footer a {
     background-position: center;
     background-repeat: no-repeat;
     padding: 350px 25px 25px;
+  }
+
+  /* Testimonials */
+  .clients {
+    flex-direction: column;
+  }
+
+  .client-img {
+    margin: 50px 0 30px;
+  }
+
+  .client-info {
+    margin: 10px 0 30px;
   }
 }
