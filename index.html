@@ -21,7 +21,18 @@
     <div class="container">
       <header>
         <nav>
-          <span class="company">Sunnyside</span>
+          <img src="images/logo.svg" alt="logo" class="title" />
+          <button
+            class="icon-hamburger"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <img
+              class="hide"
+              src="images/icon-hamburger.svg"
+              alt="icon-hamburger"
+            />
+          </button>
 
           <ul class="link-list" id="nav-links">
             <li>About</li>
@@ -29,22 +40,10 @@
             <li>Projects</li>
             <li><button class="contact-btn">CONTACT</button></li>
           </ul>
-
-          <div class="mobile-render">
-            <button class="icon-hamburger">
-              <img src="images/icon-hamburger.svg" alt="icon-hamburger" />
-            </button>
-            <ul class="mobile-list">
-              <li>About</li>
-              <li>Services</li>
-              <li>Projects</li>
-              <li><button class="contact-btn">CONTACT</button></li>
-            </ul>
-          </div>
         </nav>
 
         <div class="top-cover">
-          We are creatives<br /><br />
+          We are creatives<br />
 
           <img src="images/icon-arrow-down.svg" alt="down arrow" />
         </div>
@@ -179,7 +178,8 @@
         </div>
       </div>
       <footer class="footer">
-        <h1 class="footer-title">Sunnyside</h1>
+        <img src="images/logo.svg" alt="logo" class="footer-title" />
+
         <ul class="footer-links">
           <li>About</li>
           <li><a href="#">Services</a></li>
@@ -208,10 +208,20 @@
 
   <script>
     const hamburger = document.querySelector(".icon-hamburger");
-    const hitButton = () => {
-      console.log("hamburger");
-    };
+    const menu = document.querySelector(".link-list");
 
-    hamburger.addEventListener("click", hitButton);
+    function toggleMenu() {
+      if (menu.classList.contains("link-list--active")) {
+        this.setAttribute("aria-expanded", "false");
+        menu.classList.remove("link-list--active");
+      } else {
+        this.setAttribute("aria-expanded", "true");
+        menu.classList.add("link-list--active");
+      }
+
+      console.log(menu.classList);
+    }
+
+    hamburger.addEventListener("click", toggleMenu, false);
   </script>
 </html>
