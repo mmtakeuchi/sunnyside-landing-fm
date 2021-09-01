@@ -221,17 +221,16 @@ nav {
 .image-row {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  max-width: 100%;
 }
 
-.image-row li {
-  max-width: 25%;
+.image-row div {
+  width: 25%;
 }
 
 .image-row img {
   width: 100%;
   height: 100%;
+  vertical-align: center;
 }
 
 /* Footer */
@@ -398,5 +397,14 @@ footer a {
 
   .client-info {
     margin: 10px 0 30px;
+  }
+
+  /* Image Row Before Footer */
+  .image-row div {
+    width: 50%;
+  }
+
+  .image-row img {
+    height: 100%;
   }
 }
